@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OSF Digital - Site
 
-## Getting Started
+## Frontend (Next.js 16)
 
-First, run the development server:
+### Deploy no Vercel
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+#### Configuração do Projeto:
+1. **Root Directory**: Defina como `frontend`
+2. **Framework Preset**: Next.js
+3. **Build Command**: `npm run build` (padrão)
+4. **Output Directory**: `.next` (padrão)
+5. **Install Command**: `npm install` (padrão)
+
+#### Variáveis de Ambiente Necessárias:
+
+```env
+NEXT_PUBLIC_STRAPI_URL=https://seu-backend-strapi.com
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+⚠️ **Importante**: O frontend depende do backend Strapi para funcionar completamente. Sem a URL do Strapi configurada, a página exibirá uma mensagem de "Backend not connected".
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Backend (Strapi v5)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+O backend Strapi está na pasta `backend/` e deve ser hospedado separadamente (Railway, Render, Heroku, VPS, etc.).
 
-## Learn More
+### Estrutura do Repositório
 
-To learn more about Next.js, take a look at the following resources:
+```
+/
+├── frontend/          # Next.js App (deploy no Vercel)
+├── backend/           # Strapi CMS (deploy separado)
+├── _assets/           # Assets do projeto
+└── _bkps/            # Backups
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Desenvolvimento Local
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+#### Frontend:
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-## Deploy on Vercel
+#### Backend:
+```bash
+cd backend
+npm install
+npm run develop
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Tecnologias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Frontend**: Next.js 16, React 19, TypeScript, Tailwind CSS
+- **Backend**: Strapi v5, TypeScript
+- **Deploy**: Vercel (frontend) + Railway/Render (backend)

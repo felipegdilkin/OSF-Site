@@ -142,15 +142,39 @@ export default async function Home() {
     console.log('Initial strapiData:', strapiData); // Debug log
     
     if (!strapiData) {
-      return <main>Error: No data received from API</main>;
+      return (
+        <main className="flex min-h-screen flex-col items-center justify-center p-24">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">OSF Digital - Preview</h1>
+            <p className="text-lg text-gray-600 mb-4">Backend (Strapi CMS) not connected</p>
+            <p className="text-sm text-gray-500">
+              Configure NEXT_PUBLIC_STRAPI_URL environment variable in Vercel
+            </p>
+          </div>
+        </main>
+      );
     }
     
     if (!strapiData.data) {
-      return <main>Error: No data property in response</main>;
+      return (
+        <main className="flex min-h-screen flex-col items-center justify-center p-24">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">Data Error</h1>
+            <p className="text-lg text-gray-600">No data property in response</p>
+          </div>
+        </main>
+      );
     }
     
     if (!strapiData.data.blocks) {
-      return <main>Error: No blocks found in data</main>;
+      return (
+        <main className="flex min-h-screen flex-col items-center justify-center p-24">
+          <div className="text-center">
+            <h1 className="text-4xl font-bold mb-4">Content Error</h1>
+            <p className="text-lg text-gray-600">No blocks found in data</p>
+          </div>
+        </main>
+      );
     }
     
     const { blocks } = strapiData.data;
@@ -182,7 +206,16 @@ export default async function Home() {
     );
   } catch (error) {
     console.error('Error in Home component:', error);
-    return <main>Error: Something went wrong</main>;
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-center p-24">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold mb-4">Application Error</h1>
+          <p className="text-lg text-gray-600 mb-4">Something went wrong</p>
+          <pre className="text-xs text-left bg-gray-100 p-4 rounded">
+            {error instanceof Error ? error.message : String(error)}
+          </pre>
+        </div>
+      </main>
+    );
   }
-  // ...existing code...
 }

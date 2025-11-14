@@ -10,6 +10,10 @@ yarn-error.log*
 .env.development
 .env.production
 .env.test
+_assets
+_bkps
+.allai
+_delete
 
 # Next.js
 frontend/.next/

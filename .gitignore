@@ -1,0 +1,39 @@
+# Node & general
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Next.js
+frontend/.next/
+frontend/out/
+frontend/.turbo/
+frontend/.vercel/
+
+# Build artifacts
+dist/
+build/
+
+# Strapi (backend)
+backend/.cache/
+backend/.tmp/
+backend/build/
+backend/public/uploads/
+
+# Logs
+logs/
+*.log
+backend/npm-debug.log*
+frontend/npm-debug.log*
+backend/yarn-error.log*
+frontend/yarn-error.log*
+
+# OS
+Thumbs.db

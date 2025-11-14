@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_global_components_social_medias",
+  "info": {
+    "displayName": "socialMedias"
+  },
+  "options": {},
+  "attributes": {
+    "socialIcon": {
+      "type": "component",
+      "component": "global-components.social-links",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

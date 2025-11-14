@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_forms_sections",
+  "info": {
+    "displayName": "Forms Section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "infoContact": {
+      "type": "component",
+      "component": "components.contact-links",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

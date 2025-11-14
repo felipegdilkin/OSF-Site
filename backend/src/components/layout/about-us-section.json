@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_layout_about_us_sections",
+  "info": {
+    "displayName": "AboutUs Section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    },
+    "banner": {
+      "type": "component",
+      "component": "components.text-banners",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

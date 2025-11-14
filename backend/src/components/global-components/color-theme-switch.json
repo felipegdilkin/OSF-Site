@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_global_components_color_theme_switches",
+  "info": {
+    "displayName": "colorThemeSwitch"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

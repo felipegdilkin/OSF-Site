@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_components_text_banners",
+  "info": {
+    "displayName": "textOverBanners"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    },
+    "isOnRightSide": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

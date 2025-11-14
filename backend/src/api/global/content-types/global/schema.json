@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "globals",
+  "info": {
+    "singularName": "global",
+    "pluralName": "globals",
+    "displayName": "Global"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "Menu": {
+      "type": "component",
+      "component": "global-components.menu",
+      "repeatable": false
+    },
+    "Footer": {
+      "type": "component",
+      "component": "global-components.footer",
+      "repeatable": false
+    }
+  }
+}

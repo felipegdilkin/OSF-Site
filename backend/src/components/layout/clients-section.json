@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_layout_clients_sections",
+  "info": {
+    "displayName": "Clients Section"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    }
+  },
+  "config": {}
+}

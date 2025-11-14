@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_layout_industries_sections",
+  "info": {
+    "displayName": "Industries Section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "FirstCard": {
+      "type": "component",
+      "component": "components.card-4elements",
+      "repeatable": false
+    },
+    "SecondCard": {
+      "type": "component",
+      "component": "components.card-4elements",
+      "repeatable": false
+    },
+    "ThirdCard": {
+      "type": "component",
+      "component": "components.card-4elements",
+      "repeatable": false
+    },
+    "SideCards": {
+      "type": "component",
+      "component": "components.card-icon-text",
+      "repeatable": true
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

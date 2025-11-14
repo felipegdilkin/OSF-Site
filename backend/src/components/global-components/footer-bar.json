@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_global_components_footer_bars",
+  "info": {
+    "displayName": "FooterBar"
+  },
+  "options": {},
+  "attributes": {
+    "barLink": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": true
+    },
+    "legalText": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

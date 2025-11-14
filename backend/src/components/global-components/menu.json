@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_global_components_menus",
+  "info": {
+    "displayName": "Menu"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "global-components.osf-logo",
+      "repeatable": false
+    },
+    "menuCategory": {
+      "type": "component",
+      "component": "global-components.menu-category",
+      "repeatable": true
+    },
+    "searchButton": {
+      "type": "component",
+      "component": "global-components.search-button",
+      "repeatable": false
+    },
+    "colorThemeSwitch": {
+      "type": "component",
+      "component": "global-components.color-theme-switch",
+      "repeatable": false
+    },
+    "contactButton": {
+      "type": "component",
+      "component": "global-components.contact-button",
+      "repeatable": false
+    },
+    "languageSwitch": {
+      "type": "component",
+      "component": "global-components.language-switch",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}
+
+
+

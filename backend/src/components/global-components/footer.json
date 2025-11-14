@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_global_components_footers",
+  "info": {
+    "displayName": "Footer"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "component": "global-components.osf-logo",
+      "repeatable": false
+    },
+    "heading": {
+      "type": "string"
+    },
+    "socialMedias": {
+      "type": "component",
+      "component": "global-components.social-medias",
+      "repeatable": false
+    },
+    "subHeading": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    },
+    "FooterCategories": {
+      "type": "component",
+      "component": "global-components.footer-categories",
+      "repeatable": true
+    },
+    "FooterBar": {
+      "type": "component",
+      "component": "global-components.footer-bar",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

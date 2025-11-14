@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_global_components_menu_categories",
+  "info": {
+    "displayName": "menuCategory"
+  },
+  "options": {},
+  "attributes": {
+    "categoryName": {
+      "type": "string"
+    },
+    "pannelCategories": {
+      "type": "component",
+      "component": "global-components.pannel-categories",
+      "repeatable": false
+    },
+    "pannelBanners": {
+      "type": "component",
+      "component": "global-components.pannel-banners",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

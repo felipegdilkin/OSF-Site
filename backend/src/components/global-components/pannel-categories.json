@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_global_components_pannel_categories",
+  "info": {
+    "displayName": "pannelCategories"
+  },
+  "options": {},
+  "attributes": {
+    "categoryLink": {
+      "type": "component",
+      "component": "global-components.page-link",
+      "repeatable": true
+    },
+    "linkToAll": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

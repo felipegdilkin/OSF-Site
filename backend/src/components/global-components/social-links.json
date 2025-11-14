@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_global_components_social_links",
+  "info": {
+    "displayName": "social-icon"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "href": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "config": {}
+}

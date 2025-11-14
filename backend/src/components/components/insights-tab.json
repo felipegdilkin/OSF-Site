@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_components_insights_tabs",
+  "info": {
+    "displayName": "Insights-Tab",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "tabName": {
+      "type": "string"
+    },
+    "cardInsight": {
+      "type": "component",
+      "component": "components.insight-card",
+      "repeatable": true
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

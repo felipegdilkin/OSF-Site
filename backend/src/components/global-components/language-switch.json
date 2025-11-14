@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_global_components_language_switches",
+  "info": {
+    "displayName": "languageSwitch"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "language": {
+      "type": "component",
+      "component": "global-components.language",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

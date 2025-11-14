@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_global_components_languages",
+  "info": {
+    "displayName": "language"
+  },
+  "options": {},
+  "attributes": {
+    "flagIcon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "languageName": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

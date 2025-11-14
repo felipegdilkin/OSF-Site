@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_global_components_pannel_banners",
+  "info": {
+    "displayName": "pannelBanners"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "categoryBanner": {
+      "type": "component",
+      "component": "global-components.category-banner",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

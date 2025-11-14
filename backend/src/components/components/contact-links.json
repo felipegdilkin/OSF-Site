@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_components_contact_links",
+  "info": {
+    "displayName": "ContactLinks",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "contactInfo": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": true
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

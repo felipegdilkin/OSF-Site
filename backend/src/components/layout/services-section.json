@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_layout_services_sections",
+  "info": {
+    "displayName": "Services Section"
+  },
+  "options": {},
+  "attributes": {
+    "sectionName": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "component": "components.link",
+      "repeatable": false
+    },
+    "serviceItem": {
+      "type": "component",
+      "component": "components.service-topic",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

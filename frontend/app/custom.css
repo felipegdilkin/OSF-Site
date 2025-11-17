@@ -1062,26 +1062,41 @@
     margin: 8px 0 32px 0;
 }
 .panelBanners{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    width: fit-content;
+    display: flex;
+    gap: 32px;
 }
 .menuBannerItem{
-    display: flex;
-    flex-direction: column;
     width: 272px;
     height: auto;
-    gap: 8px;
-    text-decoration: none;
-    transition: transform 0.2s ease;
-}
-.menuBannerItem:hover{
-    transform: translateY(-2px);
+    overflow: hidden;
+    position: relative;
 }
 .menuBannerImage{
     position: relative;
-    width: fit-content;
+    width: 100%;
     height: auto;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+    display: block;
+}
+.menuBannerItem::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--Neutral-Charcoal-Gray, #2A2A3A);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.menuBannerItem:hover .menuBannerImage{
+    transform: scale(1.1);
+}
+.menuBannerItem:hover::after{
+    opacity: 0.16;
 }
 .bannerText h5{
     color: var(--primary-brand-blue-main, #070859);
